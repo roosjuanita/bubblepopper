@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>bubble popper</title>
-        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="./static/css/styles.css">
     </head>
     
     <body>
@@ -47,7 +47,7 @@
         <div id="timer"></div>
 
         <!-- The form to input the players name after the game -->
-        <form id="form" method="post" action="/submit_name" autocomplete="off">
+        <form id="form" autocomplete="off">
             <label for="name" >NAME:</label>
             <input type="text" id="name" name="name" required autofocus>
             <button class="buttons" id="submit" type="submit">submit</button>
@@ -65,7 +65,64 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- scores will be printed here -->
+                    <tr>
+                        <th>1</th>
+                        <th>Pickachu12</th>
+                        <th>9923</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>PaulTheGiant</th>
+                        <th>9762</th>
+                    </tr>
+
+                    <tr>
+                        <th>3</th>
+                        <th>Joranimous</th>
+                        <th>9412</th>
+                    </tr>
+
+                    <tr>
+                        <th>4</th>
+                        <th>Bert7</th>
+                        <th>9299</th>
+                    </tr>
+
+                    <tr>
+                        <th>5</th>
+                        <th>Bianca</th>
+                        <th>8829</th>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <th>Krezip</th>
+                        <th>8734</th>
+                    </tr>
+
+                    <tr>
+                        <th>7</th>
+                        <th>Blake6isGood</th>
+                        <th>8153</th>
+                    </tr>
+
+                    <tr>
+                        <th>8</th>
+                        <th>Janine</th>
+                        <th>8021</th>
+                    </tr>
+
+                    <tr>
+                        <th>9</th>
+                        <th>Lama4life</th>
+                        <th>8027</th>
+                    </tr>
+
+                    <tr>
+                        <th>10</th>
+                        <th>PeterGrace</th>
+                        <th>8001</th>
+                    </tr>
+
                 </tbody>
             </table>
         </div>
@@ -109,22 +166,22 @@
         </footer>
 
         <!-- Link to the script for the audio and animation -->
-        <script src="../static/js/main.js" type="module" defer></script>
-        <script src="../static/js/circles.js" type="module" defer></script>
-        <script src="../static/js/timer.js" type="module" defer></script>
-        <script src="../static/js/playagain.js" type="module" defer></script>
-        <script src="../static/js/scores.js" type="module" defer></script>
+        <script src="./static/js/main.js" type="module" defer></script>
+        <script src="./static/js/circles.js" type="module" defer></script>
+        <script src="./static/js/timer.js" type="module" defer></script>
+        <script src="./static/js/playagain.js" type="module" defer></script>
+        <script src="./static/js/scores.js" type="module" defer></script>
 
         <!-- Audio element -->
         <!-- made by: ABStudios, name: Water Drop-->
         <!--https://freesound.org/people/ABStudios/sounds/177156/-->
-        <audio id="audio" src="../static/sounds/drop1.mp3"></audio>
+        <audio id="audio" src="./static/sounds/drop1.mp3"></audio>
         
         
         <!-- Background audio -->
         <!-- made by: Funky Audio, name: TOONPop_synth bubble sequences_Funky Audio_FASS.wav-->
         <!--https://freesound.org/people/Funky_Audio/sounds/702996-->
-        <audio id="background-audio" src="../static/sounds/bubbles.mp3"></audio>
+        <audio id="background-audio" src="./static/sounds/bubbles.mp3"></audio>
 
     </body>
 
