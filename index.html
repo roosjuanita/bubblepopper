@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>bubble popper</title>
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    </head>
+    
+    <body>
+        <div>
+            <svg class="container" viewBox="0 0 100 60" preserveAspectRatio="xMaxYMin" xmlns="http://www.w3.org/2000/svg">
+                
+                <circle class="circle" fill="green" cx="50%" cy="50%" r="10%"></circle> 
+                <circle class="circle" fill="white" cx="60%" cy="30%" r="5%"></circle> 
+                <circle class="circle" fill="red" cx="90%" cy="80%" r="5%"></circle> 
+                <circle class="circle" fill="blue" cx="20%" cy="60%" r="10%"></circle> 
+                <circle class="circle" fill="black" cx="80%" cy="20%" r="10%"></circle> 
+                <circle class="circle" fill="black" cx="30%" cy="30%" r="8%"></circle> 
+                <circle class="circle" fill="purple" cx="10%" cy="14%" r="2%"></circle> 
+                <circle class="circle" fill="white" cx="55%" cy="80%" r="5%"></circle> 
+                <circle class="circle" fill="green" cx="50%" cy="50%" r="10%"></circle> 
+                <circle class="circle" fill="white" cx="60%" cy="30%" r="5%"></circle> 
+                <circle class="circle" fill="red" cx="90%" cy="80%" r="5%"></circle> 
+                <circle class="circle" fill="blue" cx="70%" cy="60%" r="10%"></circle> 
+                <circle class="circle" fill="orange" cx="90%" cy="50%" r="10%"></circle> 
+                <circle class="circle" fill="orange" cx="50%" cy="20%" r="3%"></circle> 
+                <circle class="circle" fill="purple" cx="40%" cy="10%" r="5%"></circle> 
+                <circle class="circle" fill="green" cx="30%" cy="80%" r="5%"></circle> 
+                <circle class="circle" fill="white" cx="20%" cy="10%" r="5%"></circle> 
+                <circle class="circle" fill="red" cx="12%" cy="80%" r="5%"></circle> 
+                <circle class="circle" fill="red" cx="60%" cy="10%" r="5%"></circle> 
+                <circle class="circle" fill="green" cx="10%" cy="35%" r="5%"></circle> 
+                <circle class="circle" fill="white" cx="35%" cy="50%" r="2%"></circle> 
+                <circle class="circle" fill="purple" cx="40%" cy="70%" r="5%"></circle> 
+            
+            </svg>
+        </div>
+        
+        <div class="button-container">
+            <!-- Button to enter-->
+            <button class="buttons" id="startbutton"> bubble popper </button>
+        </div>
+
+        <!-- The timer during the game -->
+        <div id="timer"></div>
+
+        <!-- The form to input the players name after the game -->
+        <form id="form" method="post" action="/submit_name" autocomplete="off">
+            <label for="name" >NAME:</label>
+            <input type="text" id="name" name="name" required autofocus>
+            <button class="buttons" id="submit" type="submit">submit</button>
+        </form>
+
+        <!-- The scoreboard -->
+        <div id="scoreboard-container">
+            <h2 id="title">HIGHSCORES</h2>
+            <table id="scoreboard" >
+                <thead>
+                    <tr>
+                        <th>Ranking</th>
+                        <th>Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- scores will be printed here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Infobutton: how to play the game -->
+        <div>
+            <button class="buttons" id="infobutton"> info </button>
+        </div>
+
+        <!-- Infotext: how to play the game -->
+        <div>
+            <text id="infotext">
+                This game is played within max 10 sec. <br>
+                Try to pop the bubbles as fast as possible<br>
+                by touching them with your finger. <br>
+                The faster you are, the more points you get. <br>
+                Good luck! <br><br>
+
+                (to start: click on bubble popper) <br>
+            </text>
+        </div>
+
+        <!-- Game over text -->
+        <div>
+            <text id="gameover"> game over </text>
+        </div>
+
+        <!-- 'Play game' button -->
+        <div>
+            <button class="buttons" id="playagain"> play again </button>
+        </div>
+
+        <!-- 'Highscores' button, to go to the scoreboard -->
+        <div>
+            <button class="buttons" id="highscores"> highscores </button>
+        </div>
+
+        <!-- The footer, with a link to www.roospollmann.nl -->
+        <footer id="footer">
+            <a href="https://www.roospollmann.nl" > made by Roos Pollmann © </a>
+        </footer>
+
+        <!-- Link to the script for the audio and animation -->
+        <script src="../static/js/main.js" type="module" defer></script>
+        <script src="../static/js/circles.js" type="module" defer></script>
+        <script src="../static/js/timer.js" type="module" defer></script>
+        <script src="../static/js/playagain.js" type="module" defer></script>
+        <script src="../static/js/scores.js" type="module" defer></script>
+
+        <!-- Audio element -->
+        <!-- made by: ABStudios, name: Water Drop-->
+        <!--https://freesound.org/people/ABStudios/sounds/177156/-->
+        <audio id="audio" src="../static/sounds/drop1.mp3"></audio>
+        
+        
+        <!-- Background audio -->
+        <!-- made by: Funky Audio, name: TOONPop_synth bubble sequences_Funky Audio_FASS.wav-->
+        <!--https://freesound.org/people/Funky_Audio/sounds/702996-->
+        <audio id="background-audio" src="../static/sounds/bubbles.mp3"></audio>
+
+    </body>
+
+</html>
